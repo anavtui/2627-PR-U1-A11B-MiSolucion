@@ -9,7 +9,8 @@ Inicio
     Mientras precio !0 hacer
         Si precio < 0 entonces
             Escribe "El precio no puede ser negativo."
-            Escribe "Introduce el precio unitario en euros (0 para terminar):"
+            Escribe "Introduce el precio unitario en euros (0 para terminar): "
+            Lee precio
         Sino
             Escribe "Introduce el número de unidades:"
             Lee unidades
@@ -19,7 +20,8 @@ Inicio
             Sino
                 unidad_total = unidad_total + unidades
                 importe = importe + (precio * unidades)
-                Escribe "Introduce el precio unitario en euros (0 para terminar):"
+                Escribe "Introduce el precio unitario en euros (0 para terminar): "
+                Lee precio
     
     Si importe < 50 entonces
         descuento = 1
